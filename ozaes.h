@@ -7,6 +7,7 @@ class oz_aes
 {
 public:
     static uint8_t * encrypt_CBC(uint8_t * input, unsigned int input_length, uint8_t * key, unsigned int key_length, unsigned int &out_length);
+    static uint8_t * encrypt_CBC(uint8_t * input, unsigned int input_length, String key, unsigned int &out_length);
     static uint8_t * encrypt_CBC(String input, uint8_t * key, unsigned int key_length, unsigned int &out_length);
     static uint8_t * encrypt_CBC(String input, String key, unsigned int &out_length);
 
